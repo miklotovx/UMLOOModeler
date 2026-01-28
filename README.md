@@ -19,21 +19,26 @@ implementation => UML extraction => compliance-oriented documentation.
 
 -**ClinicalModule**  
   Tabular data models using:
+  
   -MLP + LIME  
   -Random Forest + SHAP  
 
 -**ImageModule**  
   Image-based classification using:
+  
   -CNN + LIME  
 
 -**GeneticModule**  
   Sequential genomic data using:
+  
   -BiLSTM + DeepSHAP  
 
 ## Scope and limitations
 
 -The examples are **not reference architectures** and **not intended for performance benchmarking**.
+
 -Model accuracy and explanation quality are secondary to **architectural clarity and traceability**.
+
 -The code is structured to make architectural roles explicit for UML extraction and auditability.
 
 ## About UMLOOModeler
