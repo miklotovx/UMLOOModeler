@@ -17,18 +17,18 @@ implementation => UML extraction => compliance-oriented documentation.
 
 ## Modules (directories)
 
--**ClinicalModule**  
+**ClinicalModule**  
   Tabular data models using:
   
   -MLP + LIME  
   -Random Forest + SHAP  
 
--**ImageModule**  
+**ImageModule**  
   Image-based classification using:
   
   -CNN + LIME  
 
--**GeneticModule**  
+**GeneticModule**  
   Sequential genomic data using:
   
   -BiLSTM + DeepSHAP  
