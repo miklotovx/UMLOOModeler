@@ -65,6 +65,7 @@ class TrainedModelB:
         self.X_train = X_train
         self.y_train = y_train
         self.feature_names = feature_names
+        self.version = "1.5"
         self.explainer = ShapExplainerB(self)
         print("TrainedModelB instantiated.")
 
