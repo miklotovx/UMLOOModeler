@@ -1,6 +1,8 @@
 # Reference Implementations - Paper: *Documenting AI Systems under the EU AI Act: A UML Framework for Post-Hoc XAI Compliance*
 Paper is available at: https://zenodo.org/records/18404982
+
 PS: A new update is coming in the the next weeks.
+
 This directory contains the **reference implementations used in the paper**.
 The purpose of these materials is **illustrative and documentary**.  
 They demonstrate how heterogeneous AI systems and post-hoc explainability mechanisms can be modeled using the proposed UML-based framework and automatically documented with UMLOOModeler.
