@@ -1,50 +1,66 @@
-# Reference Implementations - Paper: *Documenting AI Systems under the EU AI Act: A UML Framework for Post-Hoc XAI Compliance*
-Paper is available at: https://zenodo.org/records/18404982
+# Reference Implementations  
+**Paper:** *Documenting AI Systems under the EU AI Act: A UML Architectural Framework with Support for Post-Hoc XAI
 
-PS: A new update is coming in the the next weeks.
+Paper: https://zenodo.org/records/19334537
 
-This directory contains the **reference implementations used in the paper**.
-The purpose of these materials is **illustrative and documentary**.  
-They demonstrate how heterogeneous AI systems and post-hoc explainability mechanisms can be modeled using the proposed UML-based framework and automatically documented with UMLOOModeler.
+---
 
-## What is included
+## Overview
 
-For each module presented in the paper, this repository provides:
+This repository contains the **reference implementations used in the paper**.
 
--the **Python source code** used in the illustrative examples  
--the **expected runtime outputs** (console logs and XAI visualizations)  
--the **UML class diagrams automatically generated** by UMLOOModeler from the source code  
+The purpose of these materials is **illustrative and documentary**. They demonstrate how heterogeneous AI systems and post-hoc explainability methods can be structured according to the proposed architectural contract, enabling their representation through UML and automated extraction via UMLOOModeler.
 
-These artifacts allow readers to directly verify the correspondence between:
-implementation => UML extraction => compliance-oriented documentation.
+---
+
+## Contents
+
+For each module presented in the paper, the repository provides:
+
+- Python source code used in the examples  
+- Expected runtime outputs   
+- UML class diagrams automatically generated from the source code with UMLOOModeler 
+
+These materials allow readers to directly verify the correspondence between:
+
+**implementation => UML extraction => compliance-oriented documentation**
+
+---
 
 ## Modules (directories)
 
-**ClinicalModule**  
-  Tabular data models using:
+**ClinicalModule** Tabular data models using:
   
-  -MLP + LIME  
-  -Random Forest + SHAP  
+  - MLP + LIME  
+  - Random Forest + SHAP  
 
-**ImageModule**  
-  Image-based classification using:
+**ImageModule** Image-based classification using:
   
-  -CNN + LIME  
+  - CNN + LIME  
 
-**GeneticModule**  
-  Sequential genomic data using:
+**GeneticModule** Sequential genomic data using:
   
-  -BiLSTM + DeepSHAP  
+  - Bilstm + DeepSHAP  
 
-## Scope and limitations
+---
 
--The examples are **not reference architectures** and **not intended for performance benchmarking**.
+## Scope and Limitations
 
--Model accuracy and explanation quality are secondary to **architectural clarity and traceability**.
+- These examples are **not reference architectures** and are **not intended for benchmarking**.  
+- Model performance and explanation quality are secondary to **architectural clarity and traceability**.  
+- The code is intentionally structured to make architectural roles explicit, supporting traceability and auditability.
 
--The code is structured to make architectural roles explicit for UML extraction and auditability.
+---
 
 ## About UMLOOModeler
 
-This repository documents *how the framework is instantiated in practice*.  
-Details about the UMLOOModeler tool itself (design goals, usage, and roadmap) are available at: https://github.com/miklotovx/UMLOOModeler/discussions/1
+This repository provides materials demonstrating *how the proposed framework can be instantiated in practice*.
+
+Details about the UMLOOModeler tool (design goals, usage, and roadmap) are available at:  
+https://github.com/miklotovx/UMLOOModeler/discussions/1
+
+---
+
+## License
+
+All materials available in this repository are under the CC BY 4.0 license. You are free to use this material, including for commercial purposes, as long you cite the author.
