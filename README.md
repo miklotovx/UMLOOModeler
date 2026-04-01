@@ -1,7 +1,7 @@
 # Reference Implementations  
 **Paper:** Documenting AI Systems under the EU AI Act: A UML Architectural Framework with Support for Post-Hoc XAI
 
-Paper: https://zenodo.org/records/19334537
+Link: https://zenodo.org/records/19334537
 
 ---
 
