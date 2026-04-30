@@ -56,7 +56,8 @@ These materials allow readers to directly verify the correspondence between:
 
 This repository provides materials demonstrating *how the proposed framework can be instantiated in practice*.
 
-Details about the UMLOOModeler tool (design goals, usage, and roadmap) are available at:  
+UMLOOModeler tool is available at: https://umloomodeler.streamlit.app/
+Other details about it (design goals, usage, and roadmap) are available at:  
 https://github.com/miklotovx/UMLOOModeler/discussions/1
 
 ---
