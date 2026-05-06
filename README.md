@@ -40,7 +40,9 @@ These materials allow readers to directly verify the correspondence between:
 
 **GeneticModule** Sequential genomic data using:
   
-  - Bilstm + DeepSHAP  
+  - Bilstm + DeepSHAP
+
+**Other examples** Contains more examples.
 
 ---
 
