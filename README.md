@@ -42,7 +42,10 @@ These materials allow readers to directly verify the correspondence between:
   
   - Bilstm + DeepSHAP
 
-**Other examples** Contains more examples.
+**Other examples** Contains more examples:
+
+  - CNN + DeepLift
+  - Transformer + Integrated Gradients
 
 ---
 
