@@ -70,7 +70,6 @@ class GeneticDatabase:
         clin = self._load_clinical()
         expr, clin = self._align_samples(expr, clin)
         expr, genes = self._select_top_genes(expr)
-        
         clin = clin.dropna(subset=["vital_status"])
         common = expr.index.intersection(clin.index)
         expr = expr.loc[common]
@@ -191,6 +190,7 @@ class TrainedModelC:
             X = X.unsqueeze(0)
             
         X = X.to(self.device)
+        
         with torch.no_grad():
             logits = self.model(X)
             probs = torch.softmax(logits, dim=1)
@@ -251,13 +251,10 @@ if __name__ == "__main__":
     #CHANGE DIRECTORY HERE. HiSeqV2 and BRCA_clinical.tsv ARE NEEDED!
     EXPR_PATH = r"C:\Users\YOURUSERNAME\HiSeqV2"
     CLIN_PATH = r"C:\Users\YOURUSERNAME\BRCA_clinical.tsv"
-
     db = GeneticDatabase(EXPR_PATH, CLIN_PATH)
-
-    definition = ModelC_Cnn1d(db, hidden_channels=32, epochs=1)
-    trained_model = definition.build_model()
-
-    x_sample, y_sample = trained_model.get_train_sample(0)
+    modelC = ModelC_Cnn1d(db, hidden_channels=32, epochs=1)
+    trained_model = modelC.build_model()
+    x_sample, _ = trained_model.get_train_sample(0)
     print(f"Prediction (Labels Prob): {trained_model.predict(x_sample)}")
     
     if _HAS_CAPTUM:
