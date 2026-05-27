@@ -44,7 +44,9 @@ These materials allow readers to directly verify the correspondence between:
 
 **Other examples** Contains more examples:
 
+  - Autoencoder + Occlusion
   - CNN + DeepLift
+  - GB + Ice
   - GRU + GSHAP
   - RF + Ceteris
   - Transformer + Integrated Gradients
