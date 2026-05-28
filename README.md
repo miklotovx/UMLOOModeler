@@ -46,16 +46,16 @@ These materials allow readers to directly verify the correspondence between:
 
   - Autoencoder + Occlusion
   - CNN + DeepLift
-  - GB + Ice
+  - Gradient Boosting + Ice
   - GRU + GSHAP
-  - RF + Ceteris
+  - Random Forest + Ceteris
   - Transformer + Integrated Gradients
 
 ---
 
 ## Scope and Limitations
 
-- These examples are **not reference architectures** and are **not intended for benchmarking**.  
+- These examples are **not intended for benchmarking**.  
 - Model performance and explanation quality are secondary to **architectural clarity and traceability**.  
 - The code is intentionally structured to make architectural roles explicit, supporting traceability and auditability.
 
