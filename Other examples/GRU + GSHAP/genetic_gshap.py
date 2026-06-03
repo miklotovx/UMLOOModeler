@@ -152,7 +152,7 @@ class SimpleGru(nn.Module):
         out = out[:, -1, :]             
         return self.fc(out)
 
-# Jupyter Notebook Cell 4 - Trained Model - <<TrainedModel>>
+# Jupyter Notebook Cell 4 - Trained GRU Model - <<TrainedModel>>
 class TrainedModelB:
     def __init__(self, model: SimpleGru, train_dataset, test_dataset, device):
         self.model: SimpleGru = model

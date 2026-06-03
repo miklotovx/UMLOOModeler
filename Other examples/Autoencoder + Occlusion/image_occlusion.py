@@ -101,7 +101,7 @@ class ModelC_Autoencoder:
 
         return trained_model
 
-# Jupyter Notebook Cell 3 - Custom Autoencoder - <<Classifier>>
+# Jupyter Notebook Cell 3 - Custom classifier - <<Classifier>>
 class SimpleAutoencoder(nn.Module):
     def __init__(self, latent_dim=128):
         super(SimpleAutoencoder, self).__init__()
@@ -198,7 +198,7 @@ class TrainedModelC_Autoencoder:
     def get_train_sample(self, idx=0):
         return self.train_dataset[idx]
 
-# Jupyter Notebook Cell 5 - Occlusion Explainer - <<OcclusionExplainer>>
+# Jupyter Notebook Cell 5 - Occlusion Explainer + Main - <<OcclusionExplainer>>
 class OcclusionExplainerC:
     def __init__(self, trained_model):
         self.trained_model = trained_model
