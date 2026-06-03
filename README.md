@@ -7,9 +7,9 @@ Link: https://zenodo.org/records/19599421
 
 ## Overview
 
-This repository contains the **reference implementations used in the paper**.
+This repository provides materials demonstrating *how the proposed framework in the paper can be instantiated in practice*.
 
-The purpose of these materials is **illustrative and documentary**. They demonstrate how heterogeneous AI systems and post-hoc explainability methods can be structured according to the proposed architectural contract, enabling their representation through UML and automated extraction via UMLOOModeler.
+These examples serve as reusable templates for developing more sophisticated post-hoc XAI systems with different data modalities, predictive models, and explanation techniques.
 
 ---
 
@@ -48,8 +48,10 @@ These materials allow readers to directly verify the correspondence between:
   - CNN + DeepLift
   - Gradient Boosting + Ice
   - GRU + GSHAP
+  - ResNet18 + GradCam
   - Random Forest + Ceteris
   - Transformer + Integrated Gradients
+  - Vit + Integrated Gradients
 
 ---
 
@@ -62,8 +64,6 @@ These materials allow readers to directly verify the correspondence between:
 ---
 
 ## About UMLOOModeler
-
-This repository provides materials demonstrating *how the proposed framework can be instantiated in practice*.
 
 UMLOOModeler tool is available at: https://umloomodeler.streamlit.app/
 
