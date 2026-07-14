@@ -65,7 +65,9 @@ These materials allow readers to directly verify the correspondence between:
 
 ## About UMLOOModeler
 
-UMLOOModeler tool is available at: https://umloomodeler.streamlit.app/
+UMLOOModeler Web tool is available <a href="https://umloomodeler.streamlit.app/ target="_blank" rel="noopener noreferrer"> here. </a>
+
+A standalone Windows version is available in the <a href="https://github.com/miklotovx/UMLOOModeler/releases" target="_blank" rel="noopener noreferrer">GitHub releases</a> page. A Linux version is also planned. The offline version is recommended for sensitive codes.
 
 Other details about it (design goals, usage, and roadmap) are available at:  
 https://github.com/miklotovx/UMLOOModeler/discussions/1
