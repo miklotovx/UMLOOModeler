@@ -79,3 +79,9 @@ https://github.com/miklotovx/UMLOOModeler/discussions/1
 All materials available directly in this repository, such as documentation, examples, and public project materials, are licensed under the CC BY 4.0 license. You are free to use these repository materials, including for commercial purposes, as long as you cite the author.
 
 The UMLOOModeler desktop application distributed through GitHub Releases is licensed separately. The Community Edition is provided for non-commercial use only and is governed by the `LICENSE.txt` file included in the release package.
+
+---
+
+## Contact
+
+You can find my e-mail in the paper.
