@@ -69,9 +69,6 @@ UMLOOModeler Web tool is available <a href="https://umloomodeler.streamlit.app/"
 
 Offline versions for Windows and Linux are available on the <a href="https://github.com/miklotovx/UMLOOModeler/releases" target="_blank" rel="noopener noreferrer">GitHub releases</a> page. Both editions process source code locally and are recommended for sensitive or confidential codebases.
 
-Other details about it (design goals, usage, and roadmap) are available at:  
-https://github.com/miklotovx/UMLOOModeler/discussions/1
-
 ---
 
 ## License
