@@ -109,7 +109,6 @@ class ModelD_Transformer:
             num_classes=len(np.unique(self.database.y)),
             hidden_dim=self.hidden_dim
         )
-        self.trained_model: TrainedModelD | None = None
 
     def build_model(self):
         ds = self.database.get_tensor_dataset()
@@ -136,13 +135,13 @@ class ModelD_Transformer:
                 loss.backward()
                 optimizer.step()
 
-        self.trained_model = TrainedModelD(
+        trained_model = TrainedModelD(
             model=self.untrained_model,
             train_dataset=train_ds,
             test_dataset=test_ds,
             device=device
         )
-        return self.trained_model
+        return trained_model
 
 # Jupyter Notebook Cell 3 - Custom classifier - <<Classifier>>
 class SimpleGenomicTransformer(nn.Module):
