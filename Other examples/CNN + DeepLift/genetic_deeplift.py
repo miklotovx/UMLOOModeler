@@ -104,7 +104,6 @@ class ModelC_Cnn1d:
             seq_len=self.database.X.shape[1],
             hidden_channels=self.hidden_channels
         )
-        self.trained_model: TrainedModelC | None = None
 
     def build_model(self):
         ds = self.database.get_tensor_dataset()
@@ -131,13 +130,13 @@ class ModelC_Cnn1d:
                 loss.backward()
                 optimizer.step()
 
-        self.trained_model = TrainedModelC(
+        trained_model = TrainedModelC(
             model=self.untrained_model,
             train_dataset=train_ds,
             test_dataset=test_ds,
             device=device
         )
-        return self.trained_model
+        return trained_model
 
 # Jupyter Notebook Cell 3 - Custom classifier - <<Classifier>>
 class SimpleCnn1d(nn.Module):
