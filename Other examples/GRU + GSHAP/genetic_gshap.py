@@ -99,7 +99,6 @@ class ModelB_Gru:
             num_layers=self.num_layers,
             num_classes=len(np.unique(self.database.y)) if self.database.y is not None else 2
         )
-        self.trained_model: TrainedModelB | None = None
 
     def build_model(self):
         ds = self.database.get_tensor_dataset()
@@ -126,14 +125,14 @@ class ModelB_Gru:
                 loss.backward()
                 optimizer.step()
 
-        self.trained_model = TrainedModelB(
+        trained_model = TrainedModelB(
             model=self.untrained_model,
             train_dataset=train_ds,
             test_dataset=test_ds,
             device=device
         )
 
-        return self.trained_model
+        return trained_model
 
 # Jupyter Notebook Cell 3 - Custom classifier - <<Classifier>>
 class SimpleGru(nn.Module):
