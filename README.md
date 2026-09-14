@@ -21,14 +21,14 @@ These examples serve as reusable templates for developing more sophisticated pos
 For each module presented in the paper, the repository provides:
 
 - Python source code used in the examples;
-- expected runtime outputs;
+- Expected runtime outputs;
 - UML class diagram images automatically generated from the source code with UMLOOModeler.
 
 These materials allow readers to examine the correspondence between:
 
-> implementation → UML extraction → Documentation
+> Implementation → UML extraction → Documentation
 
-The `ClinicalModule` directory also contains a traceable technical documentation example based on the `clinical_shap.py` implementation and the evidence produced by UMLOOModeler:
+The `ClinicalModule` directory also contains a technical documentation example based on the `clinical_shap.py` implementation:
 
 - [Clinical SHAP example documentation](ClinicalModule/clinical_shap_example_documentation.pdf)
 
