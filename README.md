@@ -1,13 +1,14 @@
-# Reference Implementations  
+# UMLOOModeler Reference Implementations and Documentation
+
 **Paper:** Documenting AI Systems under the EU AI Act: A UML Architectural Framework with Support for Post-Hoc XAI
 
-Link: https://zenodo.org/records/19599421
+[Paper available on Zenodo](https://zenodo.org/records/19599421)
 
 ---
 
 ## Overview
 
-This repository provides materials demonstrating *how the proposed framework in the paper can be instantiated in practice*.
+This repository provides materials demonstrating *how the proposed framework in the paper can be instantiated in practice*. It also provides the technical documentation of UMLOOModeler and an informal report explaining how that documentation was produced with human guidance and LLM support.
 
 These examples serve as reusable templates for developing more sophisticated post-hoc XAI systems with different data modalities, predictive models, and explanation techniques.
 
@@ -15,59 +16,82 @@ These examples serve as reusable templates for developing more sophisticated pos
 
 ## Contents
 
+### Reference implementations
+
 For each module presented in the paper, the repository provides:
 
-- Python source code used in the examples  
-- Expected runtime outputs   
-- UML class diagrams automatically generated from the source code with UMLOOModeler 
+- Python source code used in the examples;
+- expected runtime outputs;
+- UML class diagram images automatically generated from the source code with UMLOOModeler.
 
-These materials allow readers to directly verify the correspondence between:
+These materials allow readers to examine the correspondence between:
 
-**implementation => UML extraction => compliance-oriented documentation**
+> implementation → structural evidence extraction → UML representation
 
----
+The `ClinicalModule` directory also contains a traceable technical documentation example based on the `clinical_shap.py` implementation and the evidence produced by UMLOOModeler:
 
-## Modules (directories)
+- [Clinical SHAP example documentation](ClinicalModule/clinical_shap_example_documentation.pdf)
 
-**ClinicalModule** Tabular data models using:
-  
-  - MLP + LIME  
-  - Random Forest + SHAP  
+### UMLOOModeler documentation
 
-**ImageModule** Image-based classification using:
-  
-  - CNN + LIME  
+The `UMLOOModeler Documentation` directory contains:
 
-**GeneticModule** Sequential genomic data using:
-  
-  - Bilstm + DeepSHAP
+- [UMLOOModeler Technical Documentation](<UMLOOModeler Documentation/UMLOOModeler_Technical_Documentation.pdf>) - describes the behavior, supported contracts, structural evidence, outputs, and known limitations of UMLOOModeler 1.1;
+- [How the Documentation Was Produced](<UMLOOModeler Documentation/How_the_documentation_was_produced.pdf>) - reports the progressive human-LLM process used to produce and validate the technical documentation.
 
-**Other examples** Contains more examples:
-
-  - Autoencoder + Occlusion
-  - CNN + DeepLift
-  - Gradient Boosting + Ice
-  - GRU + GSHAP
-  - ResNet18 + GradCam
-  - Random Forest + Ceteris
-  - Transformer + Integrated Gradients
-  - Vit + Integrated Gradients
+The second document is an informal experience report. It reconstructs the process observed while documenting UMLOOModeler and does not present a formally validated methodology.
 
 ---
 
-## Scope and Limitations
+## Modules
 
-- These examples are **not intended for benchmarking**.  
-- Model performance and explanation quality are secondary to **architectural clarity and traceability**.  
+### ClinicalModule
+
+Tabular data examples using:
+
+- MLP + LIME;
+- Random Forest + SHAP.
+
+### ImageModule
+
+Image classification example using:
+
+- CNN + LIME.
+
+### GeneticModule
+
+Sequential genomic data example using:
+
+- BiLSTM + DeepSHAP.
+
+### Other examples
+
+Additional examples using:
+
+- Autoencoder + Occlusion;
+- CNN + DeepLIFT;
+- Gradient Boosting + ICE;
+- GRU + GSHAP;
+- ResNet18 + Grad-CAM;
+- Random Forest + Ceteris;
+- Transformer + Integrated Gradients;
+- ViT + Integrated Gradients.
+
+---
+
+## Scope of the Examples
+
+- These examples are **not intended for benchmarking**.
+- Model performance and explanation quality are secondary to **architectural clarity and traceability**.
 - The code is intentionally structured to make architectural roles explicit, supporting traceability and auditability.
 
 ---
 
 ## About UMLOOModeler
 
-UMLOOModeler Web tool is available <a href="https://umloomodeler.streamlit.app/" target="_blank" rel="noopener noreferrer"> here</a>.
+The UMLOOModeler web is available [here](https://umloomodeler.streamlit.app/).
 
-Offline versions for Windows and Linux are available on the <a href="https://github.com/miklotovx/UMLOOModeler/releases" target="_blank" rel="noopener noreferrer">GitHub releases</a> page. Both editions process source code locally and are recommended for sensitive or confidential codebases.
+Offline editions for Windows and Linux are available on the [GitHub Releases](https://github.com/miklotovx/UMLOOModeler/releases) page. The offline editions process source code locally and are recommended for sensitive or confidential codebases.
 
 ---
 
@@ -81,4 +105,4 @@ The UMLOOModeler offline distributions available through GitHub Releases are lic
 
 ## Contact
 
-You can find my e-mail in the paper.
+You can find my email address in the paper.
