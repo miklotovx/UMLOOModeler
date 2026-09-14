@@ -1,4 +1,4 @@
-# UMLOOModeler Reference Implementations and Documentation
+# Reference Implementations and UMLOOModeler Documentation
 
 **Paper:** Documenting AI Systems under the EU AI Act: A UML Architectural Framework with Support for Post-Hoc XAI
 
