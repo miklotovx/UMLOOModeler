@@ -26,7 +26,7 @@ For each module presented in the paper, the repository provides:
 
 These materials allow readers to examine the correspondence between:
 
-> implementation → structural evidence extraction → UML representation
+> implementation → UML extraction → Documentation
 
 The `ClinicalModule` directory also contains a traceable technical documentation example based on the `clinical_shap.py` implementation and the evidence produced by UMLOOModeler:
 
