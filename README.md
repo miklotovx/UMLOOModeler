@@ -32,6 +32,10 @@ The `ClinicalModule` directory also contains a technical documentation example b
 
 - [Clinical SHAP example documentation](ClinicalModule/clinical_shap_example_documentation.pdf)
 
+### PDL
+
+The `PDL` directory contains some files about Progressive Documentation Lifecycle.
+
 ### UMLOOModeler documentation
 
 The `UMLOOModeler Documentation` directory contains:
