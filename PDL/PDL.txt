@@ -1,1 +1,2 @@
-I'm working on it. I will update the readme when the paper is ready.
+PDL was observed during the production of the UMLOOModeler Technical Documentation and is shown in the PDL.jpeg.
+I'm still working on it. I will update the readme when the paper is ready. 
